@@ -10,6 +10,7 @@ def get_simple_net(dictionary_length, max_length):
     Простенькая LSTM модель
     '''
 
+
     model = Sequential()
     model.add(Embedding(dictionary_length + 1, 32, input_length=max_length))
     model.add(LSTM(100))
